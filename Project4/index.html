@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header id="header">
+        <div class="header-logo">
+          <img id="header-img" src="https://logopond.com/logos/0e1722b94c58f54ba9cc69e52fb3495c.png">
+          <h1>OriGuitars</h1>
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#How_It_Works">How It Works</a></li>
+            <li><a class="nav-link" href="#Feature">Feature</a></li>
+            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <h2 class="hero-subtitle">"Unleash your inner musician with our handmade guitars" </h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+          <input type="submit" id="submit" value="get started"> 
+        </form>
+      </section>
+      <div class="container">
+        <section id="How_It_Works">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/JfDaAr96HBY?si=ETtSyz_fFWVMOq0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section id="Feature">
+          <div class="grid">
+            <div class="icon"><i class="fa-solid fa-toolbox"></i></div>
+            <div class="desc"><h2>Repair and Maintenance Services</h2><p>Provide professional guitar setups, intonation adjustments, and fretwork.</p></div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa-solid fa-paint-roller"></i></div>
+            <div class="desc"><h2>Customization Services</h2><p>Allow customers to customize their existing guitars with unique finishes or modifications.</p></div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <div class="desc"><h2>Transparent Pricing and Policies</h2><p>Display repair costs, customization fees, and product prices prominently.</p></div>
+          </div>
+        </section>
+        <section id="Pricing">
+          <div class="product">
+            <div>Dreadnought</div>
+            <img src="https://www.andrewwhiteguitars.com/wp-content/uploads/2018/04/20200613_KarloGesnerPhotography_AndrewWhite_360_Dreadnought1050_2020_0030_Print.png" class="guitar">
+            <h2>$300</h2>
+            <button>Buy</button>
+          </div>
+          <div class="product">
+            <div>Jumbo</div>
+            <img src="https://jewittguitars.com/wp-content/uploads/2020/01/JumboMain.png" class="guitar">
+            <h2>$400</h2>
+            <button>Buy</button>
+          </div>
+          <div class="product">
+            <div>Auditorium</div>
+            <img src="https://i.pinimg.com/originals/52/e8/f4/52e8f48b4e2b74e209e2c9173fe1cfc3.png" class="guitar">
+            <h2>$350</h2>
+            <button>Buy</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2024, OriGuitars</span>
+        </footer>
+      </div>
+      
+    </div>
+  </body>
+</html>

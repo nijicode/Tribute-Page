@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@100;200;400;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color:#c7dfe1;
+  font-family:Poppins,san-serif;
+}
+#header-img{
+  border-radius:50%;
+  width:100;
+}
+.header-logo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:10px 0;
+  width:60vw;
+  /* border:5px solid red; */
+}
+header{
+  position:fixed;
+  top:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  padding:0 20px;
+  background-color:#dcebec;
+  /* border:5px solid red; */
+  width:100%;
+  z-index:1;
+}
+
+ul{
+  width:35vw;
+  display:flex;
+  justify-content:space-around;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+.hero{
+   margin-top:100px;
+  /* border:5px solid black; */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+
+}
+.hero h2{
+  font-weight:500;
+  margin-bottom:15px;
+  word-wrap: break-word;
+}
+form{
+  /* border:5px solid red; */
+  width:100%;
+}
+#email{
+  max-width: 275px;
+  display:block;
+  margin:auto;
+  width:100%;
+  padding: 5px;
+  font-family:poppins,san-serif;
+}
+#submit{
+  margin-top:15px;
+  height:30px;
+  width:200px;
+  background-color:#131616;
+  border:none;
+  color:white;
+  border-radius:6px;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-family:poppins,san-serif;
+  transition: background-color 1s;
+  cursor:pointer;
+}
+#submit:hover, button:hover{
+  background-color:#384141;
+ 
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    /* border:5px solid red; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#Feature{
+  /* border:5px solid orangered; */
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  justify-content:space-around;
+  height:500px;
+  padding:10px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+}
+.icon{
+  margin:auto;
+  font-size:50px;
+}
+.guitar{
+  height:200px;
+  margin:10px;
+}
+#Pricing{
+  display:flex;
+  /* align-items:center; */
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:space-around;
+  width:100%;
+  height:100%;
+  padding:10px;
+}
+.product{
+  /* border:2px solid black; */
+  border-radius:10px;
+  width:300px;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  height:100%;
+  justify-content:space-between;
+  box-shadow: 0 0 10px 0 black;
+  transition: all 1s;
+}
+.product:hover{
+  transform: translateY(-20px);
+}
+button{
+  padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    border:none;
+    background-color:#131616;
+    color:white;
+    transition: background-color 1s;
+    font-family:poppins,san-serif;
+    text-transform:uppercase;
+    width:150px;
+    border-radius:8px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+#Pricing >.product > div{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#dcebec;
+  width:100%;
+  text-align:center;
+  font-weight:bold;
+  height:40px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  text-transform:uppercase;
+}
+footer{
+  margin-top:30px;
+  padding: 20px;
+  width:100%;
+  /* border:5px solid black; */
+  background-color:#dcebec;
+}
+footer > ul {
+    display: flex;
+    justify-content: end;
+    /* border:5px solid red; */
+    width:100%;
+}
+footer > ul > li {
+    padding: 0 10px;
+}
+footer > span{
+ display: flex;
+    justify-content: end;
+    width:100%;
+    font-size:.9rem;
+    color:#444;
+   padding: 0 10px;
+}
+
+@media screen and (max-width:700px){
+  header{
+  flex-direction:column;
+}
+.header-logo{
+  justify-content:center;
+   margin-bottom:10px;
+
+}
+ul{
+  width:100vw;
+  margin-bottom:30px;
+}
+.hero{
+  margin-top:200px;
+}
+#Feature{
+  height:700px;
+}
+}
+@media screen and (max-width:600px){
+  iframe{
+    width:350px;
+  }
+}
